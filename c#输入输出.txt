@@ -3,7 +3,7 @@ c#中控制台输入输出用Console.write()和Console.read()_
 c#只能输入 字符型，
   
    如：string s=Console.Read();
-   不能：int a=Console.Read();想要这样可以转换
+   不能：int a=Console.Read();想要这样可以转换 ：int a=int.Prise(Console.Read());字符类型转为整数类型
 对比c++：
 int a;cin>>a;
 string b;cin>>b;
