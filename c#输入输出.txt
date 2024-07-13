@@ -1,0 +1,10 @@
+c#中控制台输入输出用Console.write()和Console.read()_
+但是在括号里要传入字符串，用“”包起来，或者单个字符，用“包起来。
+c#只能输入 字符型，
+  
+   如：string s=Console.Read();
+   不能：int a=Console.Read();想要这样可以转换
+对比c++：
+int a;cin>>a;
+string b;cin>>b;
+         
