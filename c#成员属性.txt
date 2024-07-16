@@ -1,0 +1,23 @@
+成员属性概念：一般用来保护成员变量
+使用和变量一样，外部用对象点出
+如：
+class  Test{
+public int  person{
+    get{
+   return a;
+         }
+    set{
+   a=value;
+        }
+
+                          }
+}
+Test t=new  Test();
+t.preson=6;//就会调用set里的语句，然后再执行get中的return
+
+
+
+get 需要return ,set用value表示传入的内容
+get和set可以加public,private,protect
+get和set可以只有一个
+成员属性和成员变量感觉差不多，在cpp中两者概念是一样的，c#不是，
