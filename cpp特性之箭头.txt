@@ -1,0 +1,14 @@
+在cpp中->用于通过指针来访问类的属性或方法
+如：
+class Person{
+public:
+int a=2;
+}
+int main(){
+Person *s;
+s->a=3;//s是指向Person类的指针，想访问只能用箭头
+
+
+Person s;
+s.a=4;//这里就是常规用.
+}
