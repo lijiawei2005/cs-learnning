@@ -1,0 +1,19 @@
+1. 值类型（Value Types）
+值类型变量直接包含数据，数据存储在变量的实际内存位置中。当您将一个值类型变量赋给另一个值类型变量时，会复制数据。
+
+整数类型（Integral Types）：包括sbyte、byte、short、ushort、int、uint、long、ulong等，用于存储不同大小和符号的整数。
+浮点类型（Floating-Point Types）：包括float（32位单精度浮点数）、double（64位双精度浮点数）和decimal（128位高精度十进制浮点数），用于存储小数。
+字符类型（Character Type）：char，用于存储单个Unicode字符，占用16位。
+布尔类型（Boolean Type）：bool，用于表示逻辑值true或false。
+结构体（Struct Types）：struct，用户定义的值类型，可以包含多个字段、方法、属性等。
+可空类型（Nullable Types）：Nullable<T>，允许值类型存储null值。
+2. 引用类型（Reference Types）
+引用类型变量存储数据的引用（即内存地址），而不是数据本身。当您将一个引用类型变量赋给另一个引用类型变量时，会复制引用，而不是数据本身。
+
+类（Class Types）：class，用于定义自定义的类，是引用类型的基础。
+接口（Interface Types）：interface，用于定义一组方法规范，但不实现它们，由类或其他接口来实现。
+委托（Delegate Types）：delegate，用于定义方法的引用类型，可以将方法作为参数传递或赋值给变量。
+数组（Array Types）：用于存储相同类型元素的集合，是引用类型。
+字符串（String Type）：string，用于存储文本数据，是引用类型。虽然它在语法上看起来像是值类型（例如，赋值时不会复制数据），但实际上字符串在C#中是不可变的，并且每次修改都会创建新的字符串实例。
+3. 指针类型（Pointer Types）
+指针类型仅在不安全代码（unsafe code）中使用，它允许直接访问内存地址。在C#中，默认情况下是不允许使用指针的，除非在方法或类的声明中使用了unsafe关键字。
