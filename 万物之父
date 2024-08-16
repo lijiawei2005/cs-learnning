@@ -1,0 +1,23 @@
+namespace Program
+{
+    class Son
+    {
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            object a = new Son();
+            //装箱拆箱
+            object b = 2;
+            int t = (int)b;
+            Fun(1, 2, 3,"afaf",2.11);
+        }
+        static void Fun(params object[] arr)
+        {
+
+        }
+
+    }
+}
