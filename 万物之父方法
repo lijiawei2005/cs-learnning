@@ -1,0 +1,23 @@
+namespace WanWuZhiFuFf
+{
+    class Son
+    {
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //万物之父object可F12看源码 
+            //Equals判断两个对象是否相等
+            Console.WriteLine(Equals(1, 2));//这里返回false
+            Son son = new Son();
+            Son s = son;
+            Console.WriteLine(object.ReferenceEquals(son, s));//这里返回true
+            //以上这些代码中的object.都能去掉，因为object是万物之父，是所有的基类
+             
+        }
+    }
+
+
+}
