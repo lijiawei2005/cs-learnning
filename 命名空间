@@ -1,0 +1,36 @@
+using TempTest;
+
+namespace TempTest
+{
+    class Test
+    {
+       public int a = 0;
+    }
+}
+namespace mingminkongjian
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //怎么用别的命名空间里的,1,（using +命名空间）
+            Test test = new Test();
+            //2.用（命名空间+.）来指明出处
+            TempTest.Test test1 = new TempTest.Test();
+
+        }
+    }
+}
+//不同命名空间允许有同名类
+//命名空间可以包含命名空间
+namespace s1
+{
+    namespace s2
+    {
+
+    }
+    namespace s3
+    {
+
+    }
+}
