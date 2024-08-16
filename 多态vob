@@ -1,0 +1,69 @@
+namespace Program
+{
+    class GameObject
+    {
+        public string name;
+        public GameObject(string name)
+        {
+            this.name = name;
+        }
+        public virtual void Atk()
+        {
+
+            Console.WriteLine("游戏对象进行攻击");
+        }
+    }
+    class Player : GameObject
+    {
+        public Player(string name) : base(name)
+        {
+
+        }
+        public override void Atk()
+        {
+            //base.Atk();
+            Console.WriteLine("玩家对象进行攻击");
+        }
+    }
+    class Father
+    {
+        public string a;
+        public Father(string a)
+        {
+            this.a = a;
+        }
+        public void hanshu()
+        {
+            Console.WriteLine("附近的");
+
+        }
+    }
+    class Son : Father
+    {
+        public Son(string a) : base(a)
+        {
+            
+        }
+        public new void hanshu()
+        {
+            Console.WriteLine("附");
+
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //三个关键字
+            /*v代表virtual
+               o代表override
+               b代表basw
+                       */
+            GameObject p = new Player("李");
+            p.Atk();
+            Father f = new Son("dfha");
+            f.hanshu();
+            //这两个进行对比，使用virtual,和override重写
+        }
+    }
+}
