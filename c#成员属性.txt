@@ -1,13 +1,14 @@
-成员属性概念：一般用来保护成员变量
-使用和变量一样，外部用对象点出
+成员属性概念：一般用来保护成员变量（字段）
+
 如：
 class  Test{
-public int  person{
+private string name;
+public string  Name{
     get{
-   return a;
+   return name;
          }
     set{
-   a=value;
+   name=value;
         }
 
                           }
