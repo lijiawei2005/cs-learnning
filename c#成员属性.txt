@@ -1,5 +1,5 @@
 成员属性概念：一般用来保护成员变量（字段）
-
+和字段搭配使用
 如：
 class  Test{
 private string name;
